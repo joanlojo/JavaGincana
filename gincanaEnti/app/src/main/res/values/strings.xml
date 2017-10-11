@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ProvaInicial</string>
+    <string name="hello">holamon</string>
+    <string name="salutacio">Hola Mon!</string>
+    <string-array name="tipus_pistes">
+        <item>Imatge</item>
+        <item>Text</item>
+        <item>So</item>
+    </string-array>
+</resources>
