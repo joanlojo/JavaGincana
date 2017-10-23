@@ -21,6 +21,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="top|bottom|center_horizontal|center"
+            android:onClick="mostrarNovaPista"
             android:text="Afegir Pista" />
 
         <Button
@@ -31,6 +32,13 @@
             android:text="Eliminar Pista" />
 
         <Button
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="showAbout"
+            android:text="ABOUT" />
+
+        <Button
             android:id="@+id/button4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -38,4 +46,5 @@
             android:text="Sortir" />
 
     </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>

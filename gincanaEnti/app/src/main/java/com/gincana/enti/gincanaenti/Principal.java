@@ -1,5 +1,6 @@
 package com.gincana.enti.gincanaenti;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -12,7 +13,7 @@ public class Principal extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) { //
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.afegir_pista);//la R guarda los identificadores de todos los recursos, y los divide por recursos de string, layouts..
+        setContentView(R.layout.activity_principal);//la R guarda los identificadores de todos los recursos, y los divide por recursos de string, layouts..
 
     }
     public void mostrarNovaPista(View view){
@@ -58,5 +59,20 @@ public class Principal extends AppCompatActivity {
     public void showPistas(View view){
 
     }
+
+    public void showAbout(View view){
+      //  Toast.makeText(this, "Acasfasf", Toast.LENGTH_SHORT).show();
+        Intent i = new Intent(this, About.class);
+      //  i.putExtra("usuario", "Pepe");
+        //i.putExtra("edad", 17);
+        startActivity(i);
+    }
+
+   /* @Override protected void  onActivityResult(int requestCode, int resultCode, Intent data){
+        if(requestCode == 8888 && resultCode == RESULT_OK){
+            String res  = data.getExtras().getString("resultat");
+            Toast.makeText(this, res, Toast.LENGTH_SHORT).show();
+        }
+    }*/
 
 }
